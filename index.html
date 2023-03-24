@@ -7,6 +7,7 @@
     <title>Sign up form</title>
     <link rel="icon" href="./images/odin-lined.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main">
@@ -33,32 +34,38 @@
                 <form action="#" id="form">
                     <div class="formRow">
                         <div class="formInput">
-                            <label for="">FIRST NAME</label>
-                            <input type="text">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName">
+                            <span></span>
                         </div>
                         <div class="formInput">
-                            <label for="">LAST NAME</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="formRow">
-                        <div class="formInput">
-                            <label for="">EMAIL</label>
-                            <input type="email">
-                        </div>
-                        <div class="formInput">
-                            <label for="">PHONE NUMBER</label>
-                            <input type="tel">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName">
+                            <span></span>
                         </div>
                     </div>
                     <div class="formRow">
                         <div class="formInput">
-                            <label for="">PASSWORD</label>
-                            <input type="password">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email">
+                            <span></span>
                         </div>
                         <div class="formInput">
-                            <label for="">CONFIRM PASSWORD</label>
-                            <input type="password">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formInput">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" required class="error">
+                            <span>*Password do not match</span>
+                        </div>
+                        <div class="formInput">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" required class="error">
+                            <span></span>
                         </div>
                     </div>
                 </form>
